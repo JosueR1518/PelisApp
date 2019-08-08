@@ -1,0 +1,10 @@
+
+    <label for="">Buscar:</label>
+    <input class="form-control" [(ngModel)]="texto" type="search" placeholder="Buscar pelicula" aria-label="Search" (keyup.enter)="buscarMovies()">
+
+    <div class="card-columns main-container">
+        <app-cardmovie *ngFor="let movie of movies" [movie]="movie" [isHome]="texto"></app-cardmovie>
+    </div>
+
+
+

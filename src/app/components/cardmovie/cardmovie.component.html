@@ -1,0 +1,13 @@
+
+<div class="card animated fadeIn fast" >
+  <img class="card-img-top" src="https://{{peliculaService.pathImages}}{{movie.poster_path}}" [alt]="movie.original_title">
+  <div class="card-body">
+    <h4 class="card-title">{{movie.original_title}}</h4>
+    <p class="card-text">{{movie.release_date}}</p>
+    <p class="card-text"><small class="text-muted">{{movie.overview|slice:0:250}}...</small></p>
+ <button type="button" (click)="verMovie(movie.id)" name="button" class="btn btn-outline-primary btn-block">Ver más..</button>
+
+  </div>
+</div>
+
+
