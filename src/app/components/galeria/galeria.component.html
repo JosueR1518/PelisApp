@@ -11,23 +11,38 @@
         <div class="row">
 
 
-             <div class="col-md-12 div-pic-1 puntero" (click)="verMovie(movies[0].id)" [ngStyle]="{'background-image': 'url('+ (movies[0]|pipeImage) +')'}"></div>
+             <div class="col-md-12 div-pic-1 puntero border-shadow" (click)="verMovie(movies[0].id)" [ngStyle]="{'background-image': 'url('+ (movies[0]|pipeImage) +')'}">
+               <p class="pic-titulo">{{movies[0].original_title}}</p>
+             </div>
         </div>
         <div class="row">
-          <div class="col-md-6 div-pic-2 puntero"   (click)="verMovie(movies[1].id)" [ngStyle]="{'background-image':'url('+ (movies[1]|pipeImage) +')'}"></div>
-          <div class="col-md-6 div-pic-2 puntero" (click)="verMovie(movies[2].id)" [ngStyle]="{'background-image': 'url('+ (movies[2]|pipeImage) +')'}"> </div>
+          <div class="col-md-6 div-pic-2 puntero border-shadow"   (click)="verMovie(movies[1].id)" [ngStyle]="{'background-image':'url('+ (movies[1]|pipeImage) +')'}">
+              <p class="pic-titulo">{{movies[1].original_title}}</p>
+          </div>
+          <div class="col-md-6 div-pic-2 puntero border-shadow" (click)="verMovie(movies[2].id)" [ngStyle]="{'background-image': 'url('+ (movies[2]|pipeImage) +')'}">
+              <p class="pic-titulo">{{movies[2].original_title}}</p>
+          </div>
 
         </div>
   </div>
   <div class="col-md-6">
          
         <div class="row">
-          <div class="col-md-6 div-pic-2 puntero" (click)="verMovie(movies[3].id)" [ngStyle]="{'background-image': 'url('+ (movies[3]|pipeImage) +')'}"></div>
-          <div class="col-md-6 div-pic-2 puntero" (click)="verMovie(movies[4].id)" [ngStyle]="{'background-image': 'url('+ (movies[4]|pipeImage) +')'}"></div>
+          <div class="col-md-6 div-pic-2 puntero border-shadow" (click)="verMovie(movies[3].id)" [ngStyle]="{'background-image': 'url('+ (movies[3]|pipeImage) +')'}">
+              <p class="pic-titulo">{{movies[3].original_title}}</p>
+          </div>
+          <div class="col-md-6 div-pic-2 puntero border-shadow" (click)="verMovie(movies[4].id)" [ngStyle]="{'background-image': 'url('+ (movies[4]|pipeImage) +')'}">
+              <p class="pic-titulo">{{movies[4].original_title}}</p>
+          </div>
 
         </div>
 
-        <div class="row"><div class="col-md-12 div-pic-1 puntero" (click)="verMovie(movies[5].id)" [ngStyle]="{'background-image': 'url('+ (movies[5]|pipeImage) +')'}"></div>
+        <div class="row">
+          
+          <div class="col-md-12 div-pic-1 puntero border-shadow" (click)="verMovie(movies[5].id)" [ngStyle]="{'background-image': 'url('+ (movies[5]|pipeImage) +')'}">
+              <p class="pic-titulo">{{movies[5].original_title}}</p>
+
+        </div>
      </div>
 
   </div>
